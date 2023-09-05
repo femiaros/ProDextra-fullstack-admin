@@ -1,8 +1,5 @@
 const allowedOrigins = [
-    'http://localhost:7500',
-    'http://127.0.0.1:5173',
-    'https://www.dandrepairshop.com',
-    'https://dandrepairshop.com'
+    'https://prodextra-frontend.onrender.com'
 ]
 
 const corsOptions = {
