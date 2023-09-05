@@ -117,7 +117,7 @@ const ActiveCustomersList = () => {
 
       {/* Data Grid Box */}
       <Box
-        height= {isError?'400px':'600px'}
+        height= '700px'
         sx={{
           "& .MuiDataGrid-root": {
             border: "none",

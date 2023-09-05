@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from "react-router-dom"
 import {GiCrossedSabres} from 'react-icons/gi'
 import {IoMdCloseCircle} from 'react-icons/io'
@@ -20,7 +19,7 @@ const AppNav = ({menu,setMenu}) => {
       aria-label='main navigation bar'
     >
       {/* --- OverLay --- */}
-      <div className=' bg-bgSecondary dark:bg-bgDarkSecondary w-full min-h-[550px] h-full flex flex-col fl py-6 px-4 rounded-xl overflow-auto'>
+      <div className='bg-bgSecondary dark:bg-bgDarkSecondary w-full min-h-[550px] h-full flex flex-col py-6 px-4 rounded-xl overflow-auto'>
         {/* --- Logo --- */}
         <Link
           to='/dashboard'
@@ -37,6 +36,9 @@ const AppNav = ({menu,setMenu}) => {
             navLinks.map(link=>(
               <li
                 key={link.id}
+                onClick={() => {
+                  window.scrollTo(0, 0)
+                }}
               >
                 <Link 
                   to={`/${link.id}`}
@@ -93,13 +95,13 @@ const AppNav = ({menu,setMenu}) => {
     </div>
 
   {/* --- Medium & Small Screens --- */}
-    <div className= {`AppNav ${menu? 'translate-x-[0]': 'translate-x-[-500px]'} z-10 Transition transform dark:bg-bgDarkPrimary w-60 md:w-64 h-full fixed top-0 rounded-tr-xl rounded-br-xl shadow-card dark:shadow-cardDark bpi:hidden overflow-y-auto`}
+    <div className= {`AppNav ${menu? 'translate-x-[0]': 'translate-x-[-500px]'} z-10 Transition transform dark:bg-bgDarkPrimary w-64 h-full fixed top-0 rounded-tr-xl rounded-br-xl shadow-card dark:shadow-cardDark bpi:hidden overflow-y-auto`}
       tabIndex='0' 
       aria-label='main navigation bar'
     >
     
       {/* --- OverLay --- */}
-      <div className='relative bg-bgSecondary dark:bg-bgDarkSecondary w-full min-h-[550px] h-full flex flex-col fl py-6 px-4 rounded-xl'>
+      <div className='relative bg-bgSecondary dark:bg-bgDarkSecondary w-full min-h-[550px] h-full flex flex-col pt-6 pb-16 px-4 rounded-xl'>
         {/* --- Close Menu --- */}
         <span className='absolute right-2 text-3xl'
           onClick={() => {

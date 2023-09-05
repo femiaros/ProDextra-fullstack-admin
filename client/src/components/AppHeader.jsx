@@ -16,7 +16,7 @@ const AppHeader = ({setMenu}) => {
   return (
     <div className=' flex flex-wrap items-center justify-between pt-3 pb-5'>
       {/* Menu Toggle Icon */}
-      <span className=' bpi:hidden order-1 text-3xl cursor-pointer Transition hover:opacity-[.6]'
+      <span className='border-[1px] xs:border-none border-solid border-bgActiveNav dark:border-bgDarkActiveNav bpi:hidden order-1 text-3xl cursor-pointer Transition hover:opacity-[.6] rounded-md'
         tabIndex='0' 
         aria-label='menu Toggle'
         onClick={() => {
