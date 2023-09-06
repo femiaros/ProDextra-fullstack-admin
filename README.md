@@ -27,7 +27,7 @@
 
 ### 🌐Live Frontend App 👇
 
-[![🔗Live Frontend App](/client/public/prodextra-dashboard-dark.png)](https://prodextra-frontend.onrender.com/dashboard/)
+[![🔗Live Frontend App](/client/public/prodextra-dashboard-dark.png)](https://prodextra-frontend.onrender.com)
 
 ### 🌐Live REST API 👇
 
